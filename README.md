@@ -83,11 +83,13 @@ Now we can add the config that tells Terraform to use the Backend 
 
 ### Deploy a Pipeline
 ### Explore Established Deployment Patterns
-(Link to "standard" modules)
+- [BYU OIT repositories with the `terraform-module` and `standard` topics](https://github.com/search?q=org%3Abyu-oit+topic%3Aterraform-module+topic%3Astandard&type=Repositories)
 ### See an Example
-(Link to an actual deployable)
+- TODO: Link to an actual deployable
+- [BYU OIT repositories with the `terraform` topic](https://github.com/search?q=org%3Abyu-oit+topic%3Aterraform&type=Repositories)
 ### Discover Modules
-(Link to #terraform-modules, Terraform's module registry)
+- [BYU OIT repositories with the `terraform-module` topic](https://github.com/search?q=org%3Abyu-oit+topic%3Aterraform-module&type=Repositories)
+- [Terraform's Module Registry](https://registry.terraform.io/)
 
 ## Standards and Best Practices
 ### S3 Backend
