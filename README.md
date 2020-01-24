@@ -114,7 +114,7 @@ Deployable Terraform applications should be in private GitHub repositories. They
 | Type | GitHub Topics | Description | Example |
 | --- | --- | --- | --- |
 | Standard | `standard` & `terraform-module` | High level pattern module with standards and best practices baked in and a few configurable variables | [standard-fargate](https://github.com/byu-oit/terraform-aws-standard-fargate) |
-| Component | `terraform-module` | Grouped resources that make up a logic unit | [alb](https://github.com/byu-oit/terraform-aws-alb) |
+| Component | `component` & `terraform-module` | Grouped resources that make up a logic unit | [alb](https://github.com/byu-oit/terraform-aws-alb) |
 | Helper | `helper` & `terraform-module` | Module that does not instantiate nor update resources, but provides information or reusable functions | [acs-info](https://github.com/byu-oit/terraform-aws-acs-info) |
 | Tool | `tool` & `terraform-module` | One-off resources to be built manually | [bastion](https://github.com/byu-oit/terraform-aws-bastion) |
 
