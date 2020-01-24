@@ -36,8 +36,7 @@ We're the Terraform Working Group at BYU OIT. [Connect with us!](#connect-with-t
 ## Getting Started
 ### Requirements
 1. [Download and Install Terraform](https://www.terraform.io/downloads.html)
-2. [Connect to GitHub with SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
-3. [Log into an AWS Account](https://github.com/byu-oit/BYU-AWS-Documentation#accessing-byu-aws-cli)
+2. [Log into an AWS Account](https://github.com/byu-oit/BYU-AWS-Documentation#accessing-byu-aws-cli)
 
 ### Try out Terraform
 We're going to create and deploy a simple application.
@@ -122,6 +121,15 @@ Deployable Terraform applications should be in private GitHub repositories. They
 
 #### Module Structure
 Our terraform modules follow (for the most part) the [module structure](https://www.terraform.io/docs/modules/index.html) defined by Terraform. See [the terraform module template](https://github.com/byu-oit/terraform-module-template) for the basic structure of our terraform modules.
+
+#### [Module Sources](https://www.terraform.io/docs/modules/sources.html)
+When using a terraform module you specify a `source` which tells Terraform where to find the source code for the module.
+
+We have opted to use the [GitHub source](https://www.terraform.io/docs/modules/sources.html#github) method using `git` 
+over HTTPS to pull the source code of our modules living in public GitHub repos. This is the easiest way to pull modules
+from GitHub from within a CICD pipeline (aka CodeBuild) without having to do extra configuration. The downside to this 
+is if you need to use a module residing in a private GitHub repo, you will then have to use a GitHub access token tied
+to a user who has access to the private repo. 
 
 ## Get Involved
 ### Connect with the Terraform Working Group
