@@ -107,21 +107,21 @@ terraform {
 ```
 
 ### GitHub Conventions
-Terraform Modules are in [public GitHub repositories](https://byu.app.box.com/file/293393654658) using the naming pattern `terraform-<provider>-<module_name>`. They should be created from [the terraform module template](https://github.com/byu-oit/terraform-module-template) and have the `terraform-module` GitHub topic.
+Terraform Modules are in [public GitHub repositories](https://byu.app.box.com/file/293393654658) using the naming pattern `terraform-<provider>-<module_name>`. They should be created from [the terraform module template](https://github.com/byu-oit/terraform-module-template) and have the [`terraform-module`](https://github.com/search?q=org%3Abyu-oit+topic%3Aterraform-module&type=Repositories) GitHub topic.
 
-Deployable Terraform applications should be in private GitHub repositories. They should have the `terraform` GitHub topic.
+Deployable Terraform applications should be in private GitHub repositories. They should have the [`terraform`](https://github.com/search?q=org%3Abyu-oit+topic%3Aterraform&type=Repositories) GitHub topic.
 
 ### Terraform Modules
 #### Types of Terraform Modules
 | Type | GitHub Topics | Description | Example |
 | --- | --- | --- | --- |
-| Standard | `standard` & `terraform-module` | High level pattern module with standards and best practices baked in and a few configurable variables | [standard-fargate](https://github.com/byu-oit/terraform-aws-standard-fargate) |
-| Component | `component` & `terraform-module` | Grouped resources that make up a logic unit | [alb](https://github.com/byu-oit/terraform-aws-alb) |
-| Helper | `helper` & `terraform-module` | Module that does not instantiate nor update resources, but provides information or reusable functions | [acs-info](https://github.com/byu-oit/terraform-aws-acs-info) |
-| Tool | `tool` & `terraform-module` | One-off resources to be built manually | [bastion](https://github.com/byu-oit/terraform-aws-bastion) |
+| Standard | [`standard` & `terraform-module`](https://github.com/search?q=org%3Abyu-oit+topic%3Aterraform-module+topic%3Astandard&type=Repositories) | High level pattern module with standards and best practices baked in and a few configurable variables | [standard-fargate](https://github.com/byu-oit/terraform-aws-standard-fargate) |
+| Component | [`component` & `terraform-module`](https://github.com/search?q=org%3Abyu-oit+topic%3Aterraform-module+topic%3Acomponent&type=Repositories) | Grouped resources that make up a logic unit | [alb](https://github.com/byu-oit/terraform-aws-alb) |
+| Helper | [`helper` & `terraform-module`](https://github.com/search?q=org%3Abyu-oit+topic%3Aterraform-module+topic%3Ahelper&type=Repositories) | Module that does not instantiate nor update resources, but provides information or reusable functions | [acs-info](https://github.com/byu-oit/terraform-aws-acs-info) |
+| Tool | [`tool` & `terraform-module`](https://github.com/search?q=org%3Abyu-oit+topic%3Aterraform-module+topic%3Atool&type=Repositories) | One-off resources to be built manually | [bastion](https://github.com/byu-oit/terraform-aws-bastion) |
 
 #### Module Structure
-Our terraform modules follow (for the most part) the [module structure](https://www.terraform.io/docs/modules/index.html) defined by Terraform. See [the terraform module template](https://github.com/byu-oit/terraform-module-template) for the basic structure of our terraform module.
+Our terraform modules follow (for the most part) the [module structure](https://www.terraform.io/docs/modules/index.html) defined by Terraform. See [the terraform module template](https://github.com/byu-oit/terraform-module-template) for the basic structure of our terraform modules.
 
 ## Get Involved
 ### Connect with the Terraform Working Group
