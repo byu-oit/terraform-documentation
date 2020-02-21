@@ -1,6 +1,6 @@
 # Component Modules
 
-* Status: proposed 
+* Status: accepted 
 * Deciders: Gary Crye, Jamie Visker, Josh Gubler, Scott Hutchings
 * Date: 2020-02-20
 
