@@ -61,6 +61,8 @@ Standard modules compose resources
 * Good, because without hierarchy, there is less refactoring that could break products.
 * Bad, because logic will be duplicated among standards, making fixes harder to distribute.
 * Bad, because logic will be duplicated among standards, allowing for more "drift".
+* Bad, because this _is_ a major refactor that will cause products to have a major state change. Terraform will think it needs to tear down and rebuild a bunch of resources.
+* Good, because _now_ is the time to do this kind of refactor, before we have a ton of products using the standards.
 
 
 <!-- ## Links optional -->
