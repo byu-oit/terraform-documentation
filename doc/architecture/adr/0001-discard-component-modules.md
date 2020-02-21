@@ -27,13 +27,13 @@ Terraform recommends not nesting modules into a deep hierarchy. We felt that var
 
 Chosen option: "Discard component modules", the danger of breaking products and the pain of enhancement is too high with component modules.
 
-### Positive Consequences <!-- optional -->
+<!-- ### Positive Consequences optional -->
 
-* TBD
+<!-- * [e.g., improvement of quality attribute satisfaction, follow-up decisions required, …] -->
 
-### Negative Consequences <!-- optional -->
+<!-- ### Negative Consequences optional -->
 
-* TBD
+<!-- * [e.g., compromising quality attribute, follow-up decisions required, …] -->
 
 ## Pros and Cons of the Options <!-- optional -->
 
