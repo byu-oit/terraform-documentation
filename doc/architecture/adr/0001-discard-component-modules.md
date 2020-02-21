@@ -1,4 +1,4 @@
-# Component Modules
+# Discard Component Modules
 
 * Status: accepted 
 * Deciders: Gary Crye, Jamie Visker, Josh Gubler, Scott Hutchings
@@ -8,7 +8,7 @@
 
 ## Context and Problem Statement
 
-Terraform recommends not nesting modules into a deep hierarchy. Do we follow this recommendation, or try to organize modules for reusability and abstraction?
+Terraform recommends not nesting modules into a deep hierarchy. We felt that varying from this recommendation made sense. We've started feeling some pain due to that decision. Do we follow this recommendation, or continue trying to organize modules for reusability and abstraction?
 
 ## Decision Drivers <!-- optional -->
 
@@ -20,12 +20,12 @@ Terraform recommends not nesting modules into a deep hierarchy. Do we follow thi
 
 ## Considered Options
 
-* Component modules 
-* No component modules 
+* Keep using component modules 
+* Discard component modules 
 
 ## Decision Outcome
 
-Chosen option: "No component modules", the danger of breaking products and the pain of enhancement is too high with component modules.
+Chosen option: "Discard component modules", the danger of breaking products and the pain of enhancement is too high with component modules.
 
 ### Positive Consequences <!-- optional -->
 
@@ -37,7 +37,7 @@ Chosen option: "No component modules", the danger of breaking products and the p
 
 ## Pros and Cons of the Options <!-- optional -->
 
-### Component modules 
+### Keep using component modules 
 
 Standard modules compose component modules, which compose resources
 
@@ -49,7 +49,7 @@ Standard modules compose component modules, which compose resources
 * Bad, because if a standard doesn't fit your need, you have to make lots of decisions (modify/copy standard, modify/copy component).
 * Bad, because refactoring could create major breaking changes to the state files of many products.
 
-### No component modules 
+### Discard component modules 
 
 Standard modules compose resources
 
