@@ -24,7 +24,7 @@ Using acs-info inside our standard and component modules is creating pain. Does 
 
 ## Decision Outcome
 
-Chosen option: "Pull acs-info out of modules", because  comes out best (see below).
+Chosen option: "Pull acs-info out of modules", because it was the best option based on an analysis of pros and cons (see below).
 
 <!-- ### Positive Consequences optional -->
 
