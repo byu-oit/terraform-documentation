@@ -7,6 +7,8 @@ This log lists the architectural decisions for the usage of Terraform inside BYU
 <!-- adrlog -- Regenerate the content by using "adr-log -i". You can install it via "npm install -g adr-log" -->
 
 - [ADR-0000](0000-use-markdown-architectural-decision-records.md) - Use Markdown Architectural Decision Records
+- [ADR-0001](0001-component-modules.md) - Component Modules
+- [ADR-0002](0002-pull-acs-info-out-of-modules.md) - Pull acs-info out of modules
 
 <!-- adrlogstop -->
 
