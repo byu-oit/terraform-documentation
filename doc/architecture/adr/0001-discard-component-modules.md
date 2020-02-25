@@ -1,6 +1,6 @@
-# Component Modules
+# Discard Component Modules
 
-* Status: proposed 
+* Status: accepted 
 * Deciders: Gary Crye, Jamie Visker, Josh Gubler, Scott Hutchings
 * Date: 2020-02-20
 
@@ -8,7 +8,7 @@
 
 ## Context and Problem Statement
 
-Terraform recommends not nesting modules into a deep hierarchy. Do we follow this recommendation, or try to organize modules for reusability and abstraction?
+Terraform recommends not nesting modules into a deep hierarchy. We felt that varying from this recommendation made sense. We've started feeling some pain due to that decision. Do we follow this recommendation, or continue trying to organize modules for reusability and abstraction?
 
 ## Decision Drivers <!-- optional -->
 
@@ -20,24 +20,24 @@ Terraform recommends not nesting modules into a deep hierarchy. Do we follow thi
 
 ## Considered Options
 
-* Component modules 
-* No component modules 
+* Keep using component modules 
+* Discard component modules 
 
 ## Decision Outcome
 
-Chosen option: "No component modules", the danger of breaking products and the pain of enhancement is too high with component modules.
+Chosen option: "Discard component modules", the danger of breaking products and the pain of enhancement is too high with component modules.
 
-### Positive Consequences <!-- optional -->
+<!-- ### Positive Consequences optional -->
 
-* TBD
+<!-- * [e.g., improvement of quality attribute satisfaction, follow-up decisions required, …] -->
 
-### Negative Consequences <!-- optional -->
+<!-- ### Negative Consequences optional -->
 
-* TBD
+<!-- * [e.g., compromising quality attribute, follow-up decisions required, …] -->
 
 ## Pros and Cons of the Options <!-- optional -->
 
-### Component modules 
+### Keep using component modules 
 
 Standard modules compose component modules, which compose resources
 
@@ -49,7 +49,7 @@ Standard modules compose component modules, which compose resources
 * Bad, because if a standard doesn't fit your need, you have to make lots of decisions (modify/copy standard, modify/copy component).
 * Bad, because refactoring could create major breaking changes to the state files of many products.
 
-### No component modules 
+### Discard component modules 
 
 Standard modules compose resources
 
@@ -61,6 +61,8 @@ Standard modules compose resources
 * Good, because without hierarchy, there is less refactoring that could break products.
 * Bad, because logic will be duplicated among standards, making fixes harder to distribute.
 * Bad, because logic will be duplicated among standards, allowing for more "drift".
+* Bad, because this _is_ a major refactor that will cause products to have a major state change. Terraform will think it needs to tear down and rebuild a bunch of resources.
+* Good, because _now_ is the time to do this kind of refactor, before we have a ton of products using the standards.
 
 
 <!-- ## Links optional -->
