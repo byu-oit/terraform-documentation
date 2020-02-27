@@ -8,7 +8,6 @@ Documentation for Terraform usage and best practices
 - [Getting Started](#getting-started)
     - [Requirements](#requirements)
     - [Try out Terraform](#try-out-terraform)
-    - [Deploy a Pipeline](#deploy-a-pipeline)
     - [Explore Established Deployment Patterns](#explore-established-deployment-patterns)
     - [See an Example](#see-an-example)
     - [Discover Modules](#discover-modules)
@@ -39,48 +38,8 @@ We're the Terraform Working Group at BYU OIT. [Connect with us!](#connect-with-t
 2. [Log into an AWS Account](https://github.com/byu-oit/BYU-AWS-Documentation#accessing-byu-aws-cli)
 
 ### Try out Terraform
-We're going to create and deploy a simple application.
-1. Create new working directory
+Follow the steps at [`byu-oit/hello-world-api`](https://github.com/byu-oit/hello-world-api) to create and deploy a simple application.
 
-    `mkdir my-project && cd my-project`
-
-2. Initialize Terraform in this directory   
-
-    `terraform init`
-3. Create main.tf
-    
-    (Hello, World!)
-4. Deploy using `terraform apply`
-5. (Observe deployed app)
-6. Make a change
-7. Redeploy using `terraform apply`
-8. (Observe deployed app)
-9. `terraform destroy`
-
-Let's talk about what you just did. You just used Terraform to provision X, Y, and Z AWS resources. Further, we made a trivial change that we then rolled out using Terraform.
-
-To make that change, Terraform uses a state file. That file ...
-
-Our simple application stored the state file on your local machine. Let's do it the right way.
-
-First we need to cleanup the mess we made when we did it wrong
-
-`rm stuff`
-
-Now we can add the config that tells Terraform to use the Backend 
-
-1. Add S3 Backend to main.tf
-2. `terraform init`
-
-    Note: If you get an error, it's probably because nobody has ever used a Terraform S3 Backend with this account yet. Don't worry, it's easy to set this up. Follow [these instructions](#s3-backend).
-
-`terraform apply`
-
-(Observe deployed app)
-
-`terraform destroy`
-
-### Deploy a Pipeline
 ### Explore Established Deployment Patterns
 - [BYU OIT repositories with the `terraform-module` and `standard` topics](https://github.com/search?q=org%3Abyu-oit+topic%3Aterraform-module+topic%3Astandard&type=Repositories)
 ### See an Example
